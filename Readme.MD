@@ -77,7 +77,7 @@ Each `.py` file includes:
 
 Made with 💙 and discipline by **Prashant Kumar**  
 📍 Aspiring Full Stack Developer | DSA Warrior | Ram Bhaiya’s Sevak  
-🌐 [GitHub Profile](https://github.com/yourusername)
+🌐 [GitHub Profile](https://github.com/PrashantSHIV)
 
 ---
 
