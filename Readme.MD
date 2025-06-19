@@ -1,14 +1,8 @@
-<h1 align="center">🚀 DSA Yatra with Ram Bhaiya - IN Python 🚀</h1>
+<h1 align="center">🚀 DSA JOURNEY - IN Python 🚀</h1>
 
 <p align="center">
   <img src="https://img.shields.io/badge/Language-Python-blue?style=flat-square" />
   <img src="https://img.shields.io/badge/Status-In%20Progress-yellow?style=flat-square" />
-  <img src="https://img.shields.io/badge/DSA%20Journey-Inspired%20by%20Shri%20Ram%20💙-green?style=flat-square" />
-</p>
-
-<p align="center">
-🌿 "धैर्य, अनुशासन और समर्पण से ही विजय संभव है।" <br/>
-This is my sacred path to mastering Data Structures and Algorithms, inspired by the ideals of Shri Ram.
 </p>
 
 ---
@@ -68,7 +62,6 @@ Each `.py` file includes:
 
 ## 🙏 Inspiration
 
-> **"राम के जैसा धैर्य, लक्ष्य के लिए तप, और दूसरों की मदद करने की भावना—यही मेरा पथ है।"**  
 > — Dedicated to **Shri Ram**, whose wisdom guides this journey.
 
 ---
