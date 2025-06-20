@@ -111,3 +111,7 @@ def DeleteSpecified(arr):
     arr[i] = '_'
 
     print('After deleting element: ',arr)
+
+# You can see the changes on array in function also show outside the original function.
+DeleteSpecified(arr)
+print('Outside the function: ',arr)
