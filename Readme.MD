@@ -20,7 +20,7 @@
 
 | No. | Topic                | File Name               | Status     |
 |-----|----------------------|--------------------------|------------|
-| 1   | Arrays               | `1-Array.py`             | ⏳ Pending |
+| 1   | Arrays               | `1-Array.py`             | ✔️ Completed |
 | 2   | Linked List          | `2-Linklist.py`          | ⏳ Pending |
 | 3   | Stack                | `3-Stack.py`             | ⏳ Pending |
 | 4   | Queue                | `4-Queue.py`             | ⏳ Pending |
