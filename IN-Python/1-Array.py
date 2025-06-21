@@ -27,7 +27,7 @@
 
     arr = [1,2,3,4]
 
-    To access elements of array you can use index no that starts from 0 indicates first element position then index 1 indicates second element position and so on.
+    To access elements of array you can use index no. that starts from 0 indicates first element position then index 1 indicates second element position and so on.
     arr[0], arr[1],...,.. arr[size - 1]
 
     Last index = size of array - 1 = 4 - 1 = 3.
