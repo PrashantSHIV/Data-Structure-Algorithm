@@ -16,35 +16,7 @@
 
 ---
 
-## 📚 Topics Covered
-
-| No. | Topic                | File Name               | Status     |
-|-----|----------------------|--------------------------|------------|
-| 1   | Arrays               | `1-Array.py`             | ✔️ Completed |
-| 2   | Linked List          | `2-Linklist.py`          | ⏳ Pending |
-| 3   | Stack                | `3-Stack.py`             | ⏳ Pending |
-| 4   | Queue                | `4-Queue.py`             | ⏳ Pending |
-| 5   | Tree                 | `5-Tree.py`              | ⏳ Pending |
-| 6   | Graph                | `6-Graph.py`             | ⏳ Pending |
-| 7   | Sorting              | `7-Sorting.py`           | ⏳ Pending |
-| 8   | Searching            | `8-Searching.py`         | ⏳ Pending |
-| 9   | Recursion            | `9-Recursive.py`         | ⏳ Pending |
-| 10  | Backtracking         | `10-Backtracking.py`     | ⏳ Pending |
-| 11  | Divide & Conquer    | `11.Divide&Conquer.py`   | ⏳ Pending |
-| 12  | Greedy Algorithms    | `12.Greedy.py`           | ⏳ Pending |
-| 13  | Dynamic Programming  | `13.Dynamic_Programming.py` | ⏳ Pending |
-| 14  | Bit Manipulation     | `14.Bit_Manipulation.py` | ⏳ Pending |
-| 15  | String Algorithms    | `15.String_Algo.py`      | ⏳ Pending |
-
 📝 Status will be updated as I complete each topic.
-
----
-
-## 💡 Notes Format
-
-Each `.py` file includes:
-
-- ✅ Core concepts
 
 ---
 
