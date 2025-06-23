@@ -23,7 +23,7 @@ A sorting algos is used to arrange a given array or list of elements in an order
 comparison-based sorting algorithm. It sorts the array by repeatedly selecting the smallest(or largest) element from the unsorted portion and swapping it with the first unsorted element.
 '''
 
-
+# O(n2) in all cases
 def selection_sort(arr):
 
     n = len(arr)
@@ -43,6 +43,7 @@ def selection_sort(arr):
 simplest algo that works by repeatedly swapping the adjacent elements if they are in wrong order.
 '''
 
+# O(n), O(n2), O(n2)
 def bubble_sort(ar):
     
     n = len(arr)
@@ -66,7 +67,7 @@ Insertion sort is simple sorting algorithm that works by iteratively inserting e
 def swap(arr,i,j):
     arr[i],arr[j] = arr[j],arr[i]
 
-
+# O(n), O(n2), O(n2)
 def insertion_sort(arr):
 
     n = len(arr)
@@ -86,6 +87,7 @@ def insertion_sort(arr):
 Merge sort is popular sorting algorithm known for its efficiency and stability. It follows the divide and conquer approach. It works by recursively dividing the input array into two halves, recursively sorting the two halves and finally merge them back together to obtain the sorted array.
 '''
 
+# O(nlogn) in all cases
 def merge(arr,beg,mid,end):
     
     n1 = mid - beg + 1
