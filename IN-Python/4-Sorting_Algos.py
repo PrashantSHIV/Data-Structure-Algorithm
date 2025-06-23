@@ -18,7 +18,10 @@ A sorting algos is used to arrange a given array or list of elements in an order
 * Non-comparison-based: Counting, Radix sort
 '''
 
-# SELECTION SORT: comparison-based sorting algorithm. It sorts the array by repeatedly selecting the smallest(or largest) element from the unsorted portion and swapping it with the first unsorted element.
+# SELECTION SORT
+'''
+comparison-based sorting algorithm. It sorts the array by repeatedly selecting the smallest(or largest) element from the unsorted portion and swapping it with the first unsorted element.
+'''
 
 
 def selection_sort(arr):
@@ -35,10 +38,32 @@ def selection_sort(arr):
         arr[i],arr[min_idx] = arr[min_idx],arr[i]
 
 
+# Bubble Sort
+'''
+simplest algo that works by repeatedly swapping the adjacent elements if they are in wrong order.
+'''
+
+def bubble_sort(ar):
+    
+    n = len(arr)
+
+    for i in range(n):
+        swapped = False
+
+        for j in range(n-i-1):
+            if arr[j] > arr[j+1]:
+                arr[j], arr[j+1] = arr[j+1], arr[j]
+                swapped = True
+        
+        if not swapped: break
+
+
+
 if __name__ == "__main__":
     arr = [2,1,6,3,8,5,9]
     print('Before sorting: ',arr)
-    selection_sort(arr)
+    # selection_sort(arr)
+    bubble_sort(arr)
     print('After sorting: ',arr)
 
 
