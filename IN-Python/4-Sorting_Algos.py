@@ -114,12 +114,11 @@ def merge(arr,beg,mid,end):
         if sub1[i] > sub2[j]:
             arr[p] = sub2[j]
             j += 1
-            p += 1
 
         elif sub1[i] < sub2[j]:
             arr[p] = sub1[i]
             i += 1
-            p += 1
+        p += 1
 
     if i < n1:
         arr[p] = sub1[i]
@@ -141,15 +140,55 @@ def mergesort(arr,i,j):
         merge(arr,i,mid,j)
     
 
-                
+# Quick Sort:
+'''
+Quick sort is the sorting algorithm based on the Divide and Conquer that picks an element as pivot and partitions the given array around the picked pivot by placing the pivot in its correct position in sorted array.
+'''
+
+
+def swap(arr,i,j):
+    arr[i],arr[j] = arr[j],arr[i]
+
+def partition(arr,low,high):
+    pivot = arr[high]
+    i = low - 1
+
+    for j in range(low,high):
+        if arr[j] < pivot:
+            i += 1
+            print(i)
+
+            swap(arr,i,j)
+
+    swap(arr,i+1,high)
+    return i+1
+
+#  O(nlogn), O(nlogn), O(n2)
+def quicksort(arr,i,j):
+    if i < j:
+        mid = partition(arr,i,j)
+        print(arr)
+        quicksort(arr,i,mid-1)
+        quicksort(arr,mid+1,j)
+
+
+
+
+
 
 if __name__ == "__main__":
-    arr = [2,1,6,3,8,5,9]
+    # arr = [8,10,2,1,6,3,8,5,9]
+    arr = [5, 3, 8, 4, 2, 7, 1, 10]
+    # arr = [1, 2, 3, 4, 5]
+    # arr = [5, 4, 3, 2, 1]
+
+
     print('Before sorting: ',arr)
     # selection_sort(arr)
     # bubble_sort(arr)
     # insertion_sort(arr)
-    mergesort(arr,0,len(arr)-1)
+    # mergesort(arr,0,len(arr)-1)
+    quicksort(arr,0,len(arr)-1)
     print('After sorting: ',arr)
 
 
