@@ -171,25 +171,71 @@ def quicksort(arr,i,j):
         quicksort(arr,i,mid-1)
         quicksort(arr,mid+1,j)
 
+# Counting Sort is a non-comparison-based sorting algorithm.
 
 
+
+# Total Time Complexity:
+# O(n)+O(k)+O(n)+O(k)+O(n)=𝑂(𝑛+𝑘)
+def maxValue(arr):
+    MAX = arr[0]
+
+    for x in arr:
+        if MAX < x:
+            MAX = x
+        
+    return MAX
+
+def countingsort(arr):
+    arr_size = len(arr)
+    count_size = maxValue(arr) + 1
+    count_arr = [0]*count_size
+    print('\nInitialize count array: ',count_arr)
+
+    for x in arr:
+        count_arr[x] += 1
+    print('Count array: ',count_arr)
+
+    for i in range(1,count_size):
+        count_arr[i] = count_arr[i-1] + count_arr[i]
+    print('Consecutive count array: ',count_arr)
+
+    output_arr = [0]*arr_size
+    print('Initial output array: ',output_arr)
+
+    for i in range(arr_size):
+      output_arr[count_arr[arr[i]]-1] = arr[i]
+      count_arr[arr[i]] -= 1
+
+    print('Final output array: ',output_arr)
+
+# Radix Sort:
+def radixsort(arr):
+    
+
+
+
+        
 
 
 
 if __name__ == "__main__":
     # arr = [8,10,2,1,6,3,8,5,9]
-    arr = [5, 3, 8, 4, 2, 7, 1, 10]
+    arr = [5,2, 3, 8, 4, 2, 7, 1, 2]
     # arr = [1, 2, 3, 4, 5]
     # arr = [5, 4, 3, 2, 1]
 
-
+    print('\n-----------------------------')
     print('Before sorting: ',arr)
     # selection_sort(arr)
     # bubble_sort(arr)
     # insertion_sort(arr)
     # mergesort(arr,0,len(arr)-1)
-    quicksort(arr,0,len(arr)-1)
-    print('After sorting: ',arr)
+    # quicksort(arr,0,len(arr)-1)
+    countingsort(arr)
+    # print('\nAfter sorting: ',result)
+    print('\n-----------------------------')
+
 
 
 
